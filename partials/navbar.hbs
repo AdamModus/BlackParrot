@@ -1,25 +1,17 @@
 <nav id="mainNav" class="navbar fixed-top navbar-dark animated">
+<div>
+    <a class="navbar-brand site-brand internal-link float-left" id="brandNav" href="{{@blog.url}}" title="{{@blog.title}}">
+        {{#if @blog.logo}}
+        <img class="rounded-circle float-left" width="32" alt="{{@blog.title}} - Logo" src="{{@blog.logo}}">{{/if}} <span class="h4 mb-0 font-weight-bold"
+        >{{@blog.title}}</span>
+    </a>
 
-    <div class="row">
-        <span class="col-8 col-sm-10">
-            <a class="navbar-brand site-brand internal-link" id="brandNav" href="{{@blog.url}}" title="{{@blog.title}}">
-                {{#if @blog.logo}}
-                <img class="rounded-circle pull-left" width="32" alt="{{@blog.title}} - Logo" src="{{@blog.logo}}">{{/if}} <span class="h4 mb-0 font-weight-bold"
-                >{{@blog.title}}</span>
-            </a>
-        </span>
-        
-        <span class="col-2 col-sm-1">
-            <button class="navbar-toggler offsetSearch pull-right" type="button" id="offsetMenu">
-            <i class="fa fa-search fa-lg"></i>
-            </button>
-        </span>
+    <button class="navbar-toggler offsetMenu float-right" type="button" id="offsetMenu">
+        <i class="fa fa-navicon fa-lg"></i>
+    </button>
 
-        <span class="col-2 col-sm-1">
-            <button class="navbar-toggler offsetMenu pull-right" type="button" id="offsetMenu">
-            <i class="fa fa-navicon fa-lg"></i>
-            </button>
-        </span>
-    </div>
-
+    <button class="navbar-toggler offsetSearch float-right" type="button" id="offsetMenu">
+        <i class="fa fa-search fa-lg"></i>
+    </button>
+</div>
 </nav>
