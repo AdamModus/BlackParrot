@@ -1,9 +1,3 @@
-/*
- *  Firmino.us
- *  Copyright 2016. All rights reserved.
- *
- */
-
 // Use a cacheName for cache versioning
 var cacheName = 'v1:static';
 

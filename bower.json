@@ -2,7 +2,8 @@
   "name": "blackparrot",
   "author": [
     "Macaw.ws <https://macaw.ws>",
-    "João Firmino <https://github.com/firminoweb>"
+    "João Firmino <https://github.com/firminoweb>",
+    "Rafael Fernandes <https://github.com/AdamModus>"
   ],
   "description": "Clean, Elegant & Performatic Responsive Ghost Theme",
   "main": "",
@@ -19,7 +20,7 @@
     "animations"
   ],
   "license": "MIT",
-  "homepage": "http://macaw.ws",
+  "homepage": "https://adammode.xyz",
   "dependencies": {
     "bootstrap": "4.0.0-alpha.5",
     "font-awesome": "4.6.3",

@@ -67,8 +67,9 @@ For customization/edit and build follow above:
 * Fluidvids.js
 * Disqus Comments
 
-## Demo
-[https://firmino.us](https://firmino.us) [pt-br]
+## Demos
+Original -> [https://firmino.us](https://firmino.us) [pt-br]
+Mine -> [https://adammode.xyz](https://adammode.xyz)
 
 ---
 
