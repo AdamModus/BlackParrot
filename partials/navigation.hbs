@@ -8,9 +8,9 @@
     <hr>
 
     <div class="pl-1 pr-1">
-        <ul class="nav nav-pills nav-stacked mb-1">
+        <ul class="nav flex-column nav-pills nav-fill">
 			{{#foreach navigation}}
-			<li class="nav-item nav-{{slug}} col-12" role="presentation">
+			<li class="nav-item nav-{{slug}}" role="presentation">
 				<a href="{{url absolute="true"}}" class="internal-link nav-link {{#if current}}active{{/if}}" title="{{label}}">{{label}}</a>
 			</li>
 			{{/foreach}}

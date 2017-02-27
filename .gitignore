@@ -3,6 +3,7 @@ bower_components
 components
 _build
 .vscode
+assets/dist
 
 .tmp
 dump.rdb
