@@ -1,7 +1,7 @@
 {{#foreach posts from="1" to="8"}}
 {{#is "home"}}
 {{^if featured}}
-<article class="card post mb-2 text-xs-center {{post_class}}">
+<article class="card post mb-2 text-center {{post_class}}">
 	<header class="pt-1">
     <span class="card-text text-muted small">
       {{#author}}
@@ -29,7 +29,7 @@
 </article>
 {{/if}}
 {{else}}
-<article class="card post mb-2 text-xs-center {{post_class}}">
+<article class="card post mb-2 text-center {{post_class}}">
   <header class="pt-1">
       <span class="card-text text-muted small">
       {{#author}}
