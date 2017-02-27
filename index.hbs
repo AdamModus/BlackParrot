@@ -7,7 +7,7 @@
 		<div class="cover-inner">
 	    <div class="container">
 
-	      <div class="text-xs-center fadeIn animated">
+	      <div class="text-center fadeIn animated">
 	          {{#if @blog.logo}}
 	          <a href="{{@blog.url}}" title="{{@blog.title}}" class="internal-link"><img class="rounded logo mb-2" alt="{{@blog.title}}" src="{{@blog.logo}}"></a>
 	          {{/if}}
@@ -22,7 +22,7 @@
 <main class="container" role="main">
   {{#is "paged"}}
   <section class="row">
-    <div class="col-xs-12">
+    <div class="col-12">
       {{pagination}}
       <hr class="mb-3 mt-1">
     </div>
@@ -30,19 +30,19 @@
   {{/is}}
   <section class="row">
     {{^is "paged"}}
-    <div class="col-xs-12">
+    <div class="col-12">
       <div class="card card-block-title bg-primary card-inverse">
         <h2 class="font-weight-bold mb-0 card-text" id="lposts"><i class="fa fa-file-text-o"></i> Latest Posts</h2>
       </div>
     </div>
     {{/is}}
-    <div class="col-xs-12">
+    <div class="col-12">
       {{> "loop"}}
     </div>
   </section>
 
   <section class="row">
-    <div class="col-xs-12">
+    <div class="col-12">
       <hr class="mb-2 mt-2">
       {{pagination}}
     </div>

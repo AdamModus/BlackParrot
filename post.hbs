@@ -11,7 +11,7 @@
 	<div class="cover-inner">
 	    <div class="container">
 
-	        <div class="text-xs-center fadeIn animated">
+	        <div class="text-center fadeIn animated">
 	        	<div class="mb-1">
 		            {{#foreach tags}}
 		            <a href="{{url}}" title="{{name}}" class="btn btn-tag btn-outline-secondary tag-{{id}} internal-link"><i class="fa fa-tag"></i> {{name}}</a>
@@ -33,7 +33,7 @@
 <main class="container" role="main">
     <div class="row">
 
-        <article class="col-xs-12 article">
+        <article class="col-12 article">
 
             <div class="card mb-2">
                 <div class="p-3">
@@ -43,17 +43,17 @@
                 <div class="share-post">
 
                 	<div class="card card-block mb-0">
-						<h5 class="mb-0 text-xs-center text-muted">Share this Post:</h5>
+						<h5 class="mb-0 text-center text-muted">Share this Post:</h5>
                 	</div>
 
 					<div class="card-group">
-						<div class="card mb-0 b-l-0 text-xs-left" data-sr-id="1" style="">
+						<div class="card mb-0 b-l-0 text-left" data-sr-id="1" style="">
 							<a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" class="btn btn-facebook btn-lg btn-block"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a>
 						</div>
-						<div class="card mb-0 text-xs-center" data-sr-id="2" style="">
+						<div class="card mb-0 text-center" data-sr-id="2" style="">
 							<a href="https://twitter.com/intent/tweet?text={{title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" class="btn btn-twitter btn-lg btn-block"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a>
 						</div>
-						<div class="card mb-0 text-xs-right" data-sr-id="3" style="">
+						<div class="card mb-0 text-right" data-sr-id="3" style="">
 							<a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" class="btn btn-gplus btn-lg btn-block"><i class="fa fa-google-plus-square fa-lg"></i> Google+</a>
 						</div>
 					</div>
@@ -97,7 +97,7 @@
             {{!-- Comments hidden-xs-up--}}
             <div class="card mb-3">
 				<div class="card-header bg-inverse card-inverse">
-					<h3 class="mb-0 text-xs-center card-text">
+					<h3 class="mb-0 text-center card-text">
                         <i class="fa fa-comments"></i> Comments
                     </h3>
 				</div>
@@ -109,7 +109,7 @@
 
         </article>
 
-        <aside class="col-xs-12">
+        <aside class="col-12">
             {{!-- Related Posts --}}
             <div class="card-group mb-3">
                 {{#next_post}}
@@ -129,7 +129,7 @@
 
                         </div>
 
-                        <div class="card-footer bg-primary text-xs-center">
+                        <div class="card-footer bg-primary text-center">
                             <span class="card-title h5"><i class="fa fa-chevron-circle-left"></i> Next Post</span>
                         </div>
                     </a>
@@ -152,7 +152,7 @@
 
                         </div>
 
-                        <div class="card-footer bg-primary text-xs-center">
+                        <div class="card-footer bg-primary text-center">
                           <span class="card-title h5">Previous Post <i class="fa fa-chevron-circle-right"></i></span>
                         </div>
                     </a>
