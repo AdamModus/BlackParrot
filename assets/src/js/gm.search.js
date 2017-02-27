@@ -67,8 +67,8 @@ var searchPosts = function () {
               searchResults.forEach(function(item, i) {
 
                   listsResults.innerHTML += '<a href="'+item.url+'" class="list-group-item list-group-item-action internal-link">' +
-                  '<h5 class="m-b-0 text-primary">'+item.title+'</h3>' +
-                  '<small class="text-muted"><strong>Last Mod:</strong> 05/27/2016</small>' +
+                  '<h5 class="m-b-0 text-primary text-muted col-12">'+item.title+'</h3>' +
+                  '<small class="text-muted text-muted col-12"><strong>Last Mod:</strong> 05/27/2016</small>' +
                   '</a>';
 
 
