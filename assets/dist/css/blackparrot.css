@@ -10958,6 +10958,10 @@ pre code {
   z-index: 10;
 }
 
+.mbs-cover.mini-cover {
+  min-height: 10vh;
+}
+
 .mbs-cover .cover-bg {
   content: "";
   background: center center no-repeat;
@@ -11187,13 +11191,13 @@ textarea:required:valid {
   }
   .article p,
   .article a:not(.btn) {
-    word-break: break-all;
+    word-break: break-word;
   }
   .article pre {
     white-space: pre-wrap;
   }
   .article pre code {
-    word-break: break-all;
+    word-break: break-word;
   }
   .mbs-bio-w,
   .msb-desc-w {

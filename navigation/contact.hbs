@@ -3,11 +3,23 @@
 {{#post}}
 
 {{! Header & Cover }}
-<header class="bg-primary set-shadow mbs-cover mini-cover mb-0 fadeIn animated">
+<header class="bg-primary set-shadow mbs-cover mb-0 fadeIn animated">
     <div class="cover-bg" {{#if image}}style="background-image: url({{image}})"{{/if}}></div>
 
 	{{> navbar}}
 
+	<div class="cover-inner">
+	    <div class="container">
+
+	        <div class="text-center fadeIn animated">
+	            <h1 class="display-4 font-weight-bold">
+	            	<a href="{{url absolute="true"}}" title="{{title}}" class="internal-link">{{title}}</a>
+	            </h1>
+	            <p class="lead">{{excerpt characters="140"}}</p>
+	        </div>
+
+	    </div>
+	</div>
 </header>
 
 <main class="container" role="main">
@@ -17,24 +29,12 @@
 
             <div class="card mb-3">
 
-                <div class="card-block text-center">
-
-                    <p>I'm originally from a little town called Alhandra, in Portugal.</p>
-
-                    <img src="https://adammode.xyz/alhandra.jpg">
-
-                    <p>But currently I'm residing somewhere around here! &darr; </p>
-
-                </div>
-            </div>
-
-            <div class="card mb-3">
-
                 <iframe
                   width="100%"
                   height="350"
                   frameborder="0" style="border:0" style="pointer-events:none;"
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyALv_yI3y6y6i-aAbOoq0rG1Z5uxAf33rU&q=Amsterdam" allowfullscreen>
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyALv_yI3y6y6i-aAbOoq0rG1Z5uxAf33rU
+                    &q=São Paulo,Brazil" allowfullscreen>
                 </iframe>
 
             </div>
@@ -43,7 +43,7 @@
 
                 <div class="card-block text-center">
 
-                    <p class="lead">If you think we could do something cool together, contact me!</p>
+                    <p class="lead">Put here your formmail service!</p>
 
                 </div>
             </div>

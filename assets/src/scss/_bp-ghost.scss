@@ -86,6 +86,11 @@ pre {
   	display: table;
 	position: relative;
 	z-index: 10;
+
+	&.mini-cover {
+		min-height:10vh
+	}
+
 	.cover-bg {
 		content: "";
 		background: center center no-repeat;
@@ -98,19 +103,23 @@ pre {
 		position: absolute;
 		z-index: 0;
 	}
+
 	.cover-inner {
 		display: table-cell;
   		vertical-align: middle;
   		position: relative;
   		z-index: 1;
 	}
+
 	.logo {
 		max-width: 128px;
 	}
+
 	&.full {
 		height: 100vh;
 		margin-bottom: 0;
 	}
+
 	h1 {
 		a {
 			color: inherit;
@@ -340,12 +349,12 @@ textarea {
 	.article {
 		p,
 		a:not(.btn) {
-			word-break: break-all;
+			word-break: break-word;
 		}
 		pre {
 			white-space: pre-wrap;
 			code {
-				word-break: break-all;
+				word-break: break-word;
 			}
 		}
 	}

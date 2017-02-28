@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>{{#is "index"}}{{meta_title}} - {{@blog.description}}{{/is}}{{#is "post, page"}}{{meta_title}} - {{@blog.title}}{{/is}}{{#is "author, tag"}}{{meta_title}}{{/is}}
+    <title>
+        {{#is "index"}}{{meta_title}} - {{@blog.description}}{{/is}}{{#is "post, page"}}{{meta_title}} - {{@blog.title}}{{/is}}{{#is "author, tag"}}{{meta_title}}{{/is}}
     </title>
+    
     <meta name="description" content="{{meta_description}}">
 
     <meta name="robots" content="index, follow">
