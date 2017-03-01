@@ -54,13 +54,13 @@ gulp.task('jsbuild', function () {
   	dir.src.js + 'main.js'
   	])
     .pipe(sourcemaps.init())
-    .pipe(concat('blackparrot.js'))
+    .pipe(concat('adammode.js'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(dir.dist.js));
 });
 
 gulp.task('jsmin', function () {
-  return gulp.src(dir.dist.js + 'blackparrot.js')
+  return gulp.src(dir.dist.js + 'adammode.js')
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
@@ -85,7 +85,7 @@ gulp.task('images', function () {
 //
 
 gulp.task('cssbuild', function () {
-  return gulp.src(dir.src.scss + 'blackparrot.scss')
+  return gulp.src(dir.src.scss + 'adammode.scss')
     .pipe(sourcemaps.init())
     .pipe(sass(sassOpts).on('error', sass.logError))
     .pipe(sourcemaps.write('./'))
@@ -93,7 +93,7 @@ gulp.task('cssbuild', function () {
 });
 
 gulp.task('cssmin', function () {
-  return gulp.src(dir.dist.css + 'blackparrot.css')
+  return gulp.src(dir.dist.css + 'adammode.css')
     .pipe(sourcemaps.init())
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano())

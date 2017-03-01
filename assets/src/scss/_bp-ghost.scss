@@ -212,7 +212,7 @@ pre {
 	position: fixed;
 	top: 0;
 	right: -260px;
-	transition: all .5s;
+	transition: all .3s;
 	z-index: 9999;
 	overflow: auto;
 	opacity: 0;
@@ -224,7 +224,7 @@ pre {
 	position: fixed;
 	top: 0;
 	left: -100%;
-	transition: all .5s;
+	transition: all .3s;
 	z-index: 9999;
 	overflow: auto;
 	opacity: 0;
@@ -387,4 +387,9 @@ textarea {
 		line-height: 1;
 	}
 
+}
+
+// Conditional classes
+.nowrap {
+	white-space: nowrap;
 }

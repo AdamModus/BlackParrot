@@ -25,9 +25,11 @@
 
     <link href="https://twitter.com/adammodus" rel="publisher">
 
-    <link rel="stylesheet" type="text/css" href="{{asset "dist/css/blackparrot.min.css"}}">
+    <link rel="stylesheet" type="text/css" href="{{asset "dist/css/adammode.min.css"}}">
 
     <link rel="manifest" href="/manifest.json">
+
+    <script type="text/javascript" src="{{asset "dist/js/adammode.min.js"}}" defer></script>
 
     {{ghost_head}}
 
@@ -93,24 +95,22 @@
 
     <script type="text/javascript">
 
-      // Put google font during DOM Load
-      var cb = function() {
-        var l = document.createElement('link');
-        l.rel = 'stylesheet';
-        l.href = '//fonts.googleapis.com/css?family=Open+Sans:400,700';
-        var h = document.getElementsByTagName('head')[0];
-        h.parentNode.insertBefore(l, h);
-      };
-
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(cb);
-      else window.addEventListener('load', cb);
-      
+        // Put google font during DOM Load
+        var cb = function() {
+            var l = document.createElement('link');
+            l.rel = 'stylesheet';
+            l.href = '//fonts.googleapis.com/css?family=Open+Sans:400,700';
+            var h = document.getElementsByTagName('head')[0];
+            h.parentNode.insertBefore(l, h);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) {
+            raf(cb);
+        }
+        else {
+            window.addEventListener('load', cb);
+        }
     </script>
-    
-
-    <script type="text/javascript" src="{{asset "dist/js/blackparrot.min.js"}}" defer></script>
 
     {{ghost_foot}}
 

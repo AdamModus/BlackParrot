@@ -11223,4 +11223,8 @@ textarea:required:valid {
   }
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 /*# sourceMappingURL=blackparrot.css.map */
