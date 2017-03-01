@@ -38,7 +38,7 @@
 	    };
 
 	    window.sr = ScrollReveal( config );
-		sr.reveal(".post", { scale: 0.8, duration: 1500 });
+		sr.reveal(".post", { scale: 0.8, duration: 500 });
 
 
 		//* offSetMenu
