@@ -1061,7 +1061,7 @@ if (searchBtn) {
 	var defaults = {
 		scrollNav: document.getElementById('scrollNav'),
 		mainNav: document.getElementById('mainNav'),
-		scrollY: 72,
+		scrollY: 50,
 		callback: function () {}
 	};
 
@@ -1195,7 +1195,7 @@ if (searchBtn) {
 	    };
 
 	    window.sr = ScrollReveal( config );
-		sr.reveal(".post", { scale: 0.8, duration: 1500 });
+		sr.reveal(".post", { scale: 0.8, duration: 500 });
 
 
 		//* offSetMenu
@@ -1256,28 +1256,28 @@ if (searchBtn) {
   	//*** Service Worker (PWA Cache)
 
     //* Register the service worker if available.
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js').then(function(reg) {
-            console.log('Successfully registered service worker', reg);
-        }).catch(function(err) {
-            console.warn('Error whilst registering service worker', err);
-        });
-    }
+    // if ('serviceWorker' in navigator) {
+    //     navigator.serviceWorker.register('/sw.js').then(function(reg) {
+    //         console.log('Successfully registered service worker', reg);
+    //     }).catch(function(err) {
+    //         console.warn('Error whilst registering service worker', err);
+    //     });
+    // }
 
     window.addEventListener('online', function(e) {
         // Resync data with server.
         console.log("You are online");
-        Page.hideOfflineWarning();
+        // Page.hideOfflineWarning();
         //Arrivals.loadData();
     }, false);
 
     window.addEventListener('offline', function(e) {
         // Queue up events for server.
         console.log("You are offline");
-        Page.showOfflineWarning();
+        // Page.showOfflineWarning();
     }, false);
 
 	////
 })();
 
-//# sourceMappingURL=blackparrot.js.map
+//# sourceMappingURL=adammode.js.map

@@ -26,7 +26,7 @@
 	var defaults = {
 		scrollNav: document.getElementById('scrollNav'),
 		mainNav: document.getElementById('mainNav'),
-		scrollY: 72,
+		scrollY: 50,
 		callback: function () {}
 	};
 
