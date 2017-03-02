@@ -9,17 +9,26 @@
 	<div class="cover-inner">
 	    <div class="container">
 
-			bananas
-
 	        <div class="text-center fadeIn animated">
 	            {{#if image}}
-	            <a href="{{url}}" title="{{name}}'s Posts" class="internal-link"><img class="rounded-circle img-thumbnail logo mb-2" alt="{{name}}" src="{{image}}"></a>
+	            	<a href="{{url}}" title="{{name}}'s Posts" class="internal-link"><img class="rounded-circle img-thumbnail logo mb-2" alt="{{name}}" src="{{image}}"></a>
 	            {{/if}}
 	            <h1 class="font-weight-bold">
-	            	<a href="{{url absolute="true"}}" title="{{name}}" class="internal-link">{{name}}</a>
+	            	About <a href="{{url absolute="true"}}" title="{{name}}" class="internal-link">{{name}}</a>
 	            </h1>
 
-				<p class="msb-desc-w"><i class="fa fa-file-text-o"></i> <strong>{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</strong> {{#if location}}• <i class="fa fa-map-marker"></i> {{location}}{{/if}} {{#if website}}• <i class="fa fa-link"></i> <a href="{{website}}">{{website}}</a>{{/if}}</p>
+				<p class="msb-desc-w">
+					<i class="fa fa-file-text-o"></i> 
+					<strong>{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</strong> 
+					{{#if location}}
+						• <i class="fa fa-map-marker"></i> 
+						{{location}}
+					{{/if}}
+					{{#if website}}
+						• <i class="fa fa-link"></i> 
+						<a href="{{website}}">{website}}</a>
+					{{/if}}
+				</p>
 
 				{{#if bio}}
 	            <div class="mbs-bio-w mx-auto d-block p-1">
@@ -34,32 +43,27 @@
 {{/author}}
 
 <main class="container" role="main">
-	{{#is "paged"}}
-	<section class="row">
-		<div class="col-12">
-		  {{pagination}}
-		  <hr class="mb-3 mt-1">
-		</div>
-	</section>
-	{{/is}}
+    <div class="row">
+        <article class="col-12 article">
 
-	<section class="row">
-	    {{^is "paged"}}
-	    <div class="col-12">
-	      <div class="card card-block-title bg-primary card-inverse">
-	        <h2 class="font-weight-bold mb-0 card-text" id="lposts"><i class="fa fa-file-text-o"></i> Latest Posts</h2>
-	      </div>
-	    </div>
-	    {{/is}}
-		<div class="col-12">
-	    	{{> "loop"}}
-	    </div>
-    </section>
+            <div class="card mb-3">
+                <div class="card-block text-center">
+                    <p>I'm originally from a beautiful little town called Alhandra, in Portugal.</p>
+					<p>&darr;</p>
+                    <img src="https://adammode.xyz/alhandra.jpg">
+                    <p>But I stumbled on a plane and now I am currently residing in Amsterdam.</p>
+                </div>
+            </div>
 
-	<section class="row">
-		<div class="col-12">
-		  <hr class="mb-2 mt-2">
-		  {{pagination}}
-		</div>
-	</section>
+            <div class="card mb-3">
+                <div class="card-block text-center">
+                    <p>I studied Computer Science and Computer Engineering because when I was young(er) I was one of the kids that really liked computers.</p>
+					<p>I ❤️ javascript, javascripty things and also really enjoy frontend related stuff.</p>
+					<p>I'm currently working as a frontend developer but recently I started participating in conferences and found out that's also a lot of fun!</p>
+					<p>My biggest dream in life is to find a non-fattening chocolate fountain!</p>
+                </div>
+            </div>
+
+        </article>
+    </div>
 </main>
