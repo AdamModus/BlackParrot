@@ -11122,4 +11122,9 @@ textarea:required:valid {
   white-space: nowrap;
 }
 
+.spaced {
+  letter-spacing: 0;
+  line-height: 1.5rem;
+}
+
 /*# sourceMappingURL=adammode.css.map */
