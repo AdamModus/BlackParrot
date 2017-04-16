@@ -69,9 +69,7 @@ gulp.task('jsmin', function () {
 
 // Copy fonts from modules to dist
 gulp.task('fonts', function () {
-	return gulp.src(
-			['node_modules/font-awesome/fonts/fontawesome-webfont.*']
-		)
+	return gulp.src(['node_modules/font-awesome/fonts/fontawesome-webfont.*'])
 		.pipe(gulp.dest('assets/dist/fonts/'));
 });
 
