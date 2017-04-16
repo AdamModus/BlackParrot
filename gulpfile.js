@@ -13,7 +13,7 @@ var image = require('gulp-image');
 
 // Paths
 var node_modules = {
-	flv: 'components/fluidvids/'
+	flv: 'node_modules/fluidvids.js/'
 };
 
 var sassOpts = {
