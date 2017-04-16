@@ -1,23 +1,13 @@
-/*! BlackParrot Theme Style Configuration v1.0.0
- *	Copyright 2016, Macaw.ws
- *	https://macaw.ws
- *	https://twitter.com/macawws
- */
-
 //*** THEME (Skin variables and configs) ***//
 @import "configs";
 
-
-//*** VENDOR ***//
-
 //- Bootstrap 4.0.0-alpha.4 -//
-@import "../../../components/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
 //- Font Awesome 4.6.3 -//
-@import "../../../components/font-awesome/scss/font-awesome";
+@import "../../../node_modules/font-awesome/scss/font-awesome";
 
-
-//*** MACAWS (Macaws Bootstrap 4 Custom Modules) ***//
+//***(Bootstrap 4 Custom Modules) ***//
 @import "buttons";
 @import "tables";
 @import "animation";
@@ -29,4 +19,3 @@
 
 //*** ***//
 @import "bp-ghost";
-

@@ -17,29 +17,8 @@
 		players: ['player.youtube.com', 'www.youtube.com']
 	});
 
-    //* StickyNav
-	stickyNav.init({
-		scrollNav: false,
-		mainNav: document.getElementById('mainNav'),
-		scrollY: 200,
-	});
-
-
 	//*** Events After DOM Content Loaded
 	document.addEventListener('DOMContentLoaded', function(e) {
-
-		//* ScrollReveal
-		var config = {
-	        viewFactor : 0.15,
-	        duration   : 800,
-	        distance   : "0",
-	        reset: true,
-	        scale      : 0.5
-	    };
-
-	    window.sr = ScrollReveal( config );
-		sr.reveal(".post", { scale: 0.8, duration: 500 });
-
 
 		//* offSetMenu
     	var btnMenu = document.querySelectorAll('.offsetMenu');

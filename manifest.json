@@ -1,35 +1,30 @@
 {
   "short_name": "adammode.xyz",
   "name": "adammode.xyz/",
-  "description": "Hi, I'm Rafael Fernandes and personally, I feel like a person! 👽  ",
+  "description": "Hi, I'm Rafael Fernandes and personally, I feel like a person! 👽",
   "icons": [{
-    "src": "/assets/dist/img/android-chrome-36x36.png",
-    "sizes": "36x36",
+    "src": "/assets/dist/img/favicon-16x16.png",
+    "sizes": "16x16",
     "type": "image/png"
   }, 
   {
-    "src": "/assets/dist/img/android-chrome-48x48.png",
-    "sizes": "48x48",
+    "src": "/assets/dist/img/favicon-32x32.png",
+    "sizes": "32x32",
     "type": "image/png"
   }, 
   {
-    "src": "/assets/dist/img/android-chrome-72x72.png",
-    "sizes": "72x72",
-    "type": "image/png"
-  }, 
-  {
-    "src": "/assets/dist/img/android-chrome-96x96.png",
+    "src": "/assets/dist/img/favicon-96x96.png",
     "sizes": "96x96",
     "type": "image/png"
   }, 
   {
-    "src": "/assets/dist/img/android-chrome-144x144.png",
-    "sizes": "144x144",
+    "src": "/assets/dist/img/favicon-128x128.png",
+    "sizes": "128x128",
     "type": "image/png"
   }, 
   {
-    "src": "/assets/dist/img/android-chrome-192x192.png",
-    "sizes": "192x192",
+    "src": "/assets/dist/img/favicon-196x196.png",
+    "sizes": "196x196",
     "type": "image/png"
   }],
   "start_url": "./?utm_source=web_app_manifest",
